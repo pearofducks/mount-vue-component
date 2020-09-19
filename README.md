@@ -23,10 +23,11 @@ const { vNode, el, destroy } = mount(comp, { name: 'bar' })
 
 ## api
 
-#### `mount(component, props, element, app)`
+#### `mount(component, { props, slots, element, app })`
 
 - `component`: required, the component to be created/mounted
 - `props`: props to be passed onto the component, this can include HTML attributes like `id` or `class`
+- `slots`: slots to be rendered as children of the component
 - `element`: if specified, the element to mount the component into, if not specified, a `div` will be created
 - `app`: the Vue app instance from `createApp`, if provided will be bound to the component's `appContext`
 
