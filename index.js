@@ -1,9 +1,9 @@
 import { createVNode, render } from 'vue'
 
-export const mount = (component, props, element, app) => {
+export const mount = (component, { props, slots, element, app } = {}) => {
   let el = element
 
-  let vNode = createVNode(component, props)
+  let vNode = createVNode(component, props, slots)
   if (app?._context) vNode.appContext = app._context
   if (el) render(vNode, el)
   else if (typeof document !== 'undefined' ) render(vNode, el = document.createElement('div'))
