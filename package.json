@@ -5,7 +5,10 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "preversion": "npm run build",
+    "version": "npm publish --access public",
+    "postversion": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
