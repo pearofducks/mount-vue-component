@@ -27,7 +27,7 @@ const { vNode, destroy, el } = mount(comp, { props: { name: 'world' } })
 
 - `component`: required, the component to be created/mounted
 - `props`: props to be passed onto the component, this can include HTML attributes like `id` or `class`
-- `children`: components to be rendered as children of the component
+- `children`: components to be rendered as children of `component`
 - `element`: if specified, the element to mount the component into, if not specified, a `div` will be created
 - `app`: the Vue app instance from `createApp`, if provided will be bound to the component's `appContext`
 
