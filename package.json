@@ -28,7 +28,6 @@
   },
   "homepage": "https://github.com/pearofducks/mount-vue-component#readme",
   "devDependencies": {
-    "@vue/test-utils": "^1.1.0",
     "browser-env": "^3.3.0",
     "esm": "^3.2.25",
     "esm-with-syntax-fixes": "^0.0.1",
