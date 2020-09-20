@@ -18,7 +18,7 @@ const comp = {
   unmounted() { console.log("Bye") },
   mounted() { console.log("Hi") }
 }
-const { vNode, destroy, el } = mount(comp, { name: 'world' })
+const { vNode, destroy, el } = mount(comp, { props: { name: 'world' } })
 ```
 
 ## api
