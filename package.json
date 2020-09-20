@@ -8,7 +8,8 @@
     "build": "rollup -c",
     "preversion": "npm run build",
     "version": "npm publish --access public",
-    "postversion": "git push --follow-tags"
+    "postversion": "git push --follow-tags",
+    "test": "node -r esm-with-syntax-fixes -r browser-env/register test/mount.test.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,12 @@
   },
   "homepage": "https://github.com/pearofducks/mount-vue-component#readme",
   "devDependencies": {
+    "@vue/test-utils": "^1.1.0",
+    "browser-env": "^3.3.0",
+    "esm": "^3.2.25",
+    "esm-with-syntax-fixes": "^0.0.1",
     "rollup": "^2.27.1",
+    "uvu": "^0.3.3",
     "vue": "^3.0.0"
   }
 }
