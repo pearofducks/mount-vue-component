@@ -19,7 +19,7 @@ test('it can create an instance without any optional arguments', () => {
 test('it can create an instance with props', () => {
   const comp = createComponent()
   const props = { name: 'world' }
-  const { vNode, el } = createComponentInstance(comp, { props })
+  const { el } = createComponentInstance(comp, { props })
   assert.is(el.querySelector('h1').textContent, 'Hello world')
 })
 
