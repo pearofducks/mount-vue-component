@@ -1,7 +1,7 @@
 {
   "name": "mount-vue-component",
   "version": "0.9.4",
-  "description": "a tiny utility to programatically create and mount Vue 3 components",
+  "description": "a tiny utility to programatically create and mount Vue 3 components - e.g. a Vue.extend replacement",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "scripts": {
