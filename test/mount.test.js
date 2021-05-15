@@ -1,7 +1,8 @@
+import 'abdomen/setup'
 import { test } from 'uvu'
 import * as assert from 'uvu/assert'
 import { isVNode, h, createApp } from 'vue'
-import { mount as createComponentInstance } from '../index'
+import { mount as createComponentInstance } from '../index.js'
 
 const createComponent = (options) => ({
   template: '<h1 class="my-class">Hello {{ name }}<slot /></h1>',

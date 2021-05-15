@@ -2,6 +2,7 @@
   "name": "mount-vue-component",
   "version": "0.9.5",
   "description": "a tiny utility to programatically create and mount Vue 3 components - e.g. a Vue.extend replacement",
+  "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "scripts": {
@@ -9,7 +10,7 @@
     "preversion": "npm run build",
     "version": "npm publish --access public",
     "postversion": "git push --follow-tags",
-    "test": "node -r esm-with-syntax-fixes -r browser-env/register test/mount.test.js"
+    "test": "node test/mount.test.js"
   },
   "repository": {
     "type": "git",
@@ -28,11 +29,10 @@
   },
   "homepage": "https://github.com/pearofducks/mount-vue-component#readme",
   "devDependencies": {
-    "browser-env": "^3.3.0",
-    "esm": "^3.2.25",
-    "esm-with-syntax-fixes": "^0.0.1",
-    "rollup": "^2.27.1",
-    "uvu": "^0.3.3",
-    "vue": "^3.0.0"
+    "abdomen": "^1.0.0",
+    "jsdom": "^16.5.3",
+    "rollup": "^2.48.0",
+    "uvu": "^0.5.1",
+    "vue": "^3.0.11"
   }
 }
