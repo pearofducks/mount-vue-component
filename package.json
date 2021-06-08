@@ -30,9 +30,9 @@
   "homepage": "https://github.com/pearofducks/mount-vue-component#readme",
   "devDependencies": {
     "abdomen": "^1.0.0",
-    "jsdom": "^16.5.3",
-    "rollup": "^2.48.0",
+    "jsdom": "^16.6.0",
+    "rollup": "^2.51.1",
     "uvu": "^0.5.1",
-    "vue": "^3.0.11"
+    "vue": "^3.1.1"
   }
 }
