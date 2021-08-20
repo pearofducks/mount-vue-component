@@ -1,6 +1,6 @@
 {
   "name": "mount-vue-component",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "a tiny utility to programatically create and mount Vue 3 components - e.g. a Vue.extend replacement",
   "type": "module",
   "main": "dist/index.cjs.js",
