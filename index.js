@@ -1,6 +1,6 @@
 import { createVNode, render } from 'vue'
 
-export const mount = (component, { props, children, element, app } = {}) => {
+export function mount(component, { props, children, element, app } = {}) {
   let el = element
 
   let vNode = createVNode(component, props, children)
