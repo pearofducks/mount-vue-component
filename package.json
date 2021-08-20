@@ -8,7 +8,7 @@
   "types": "./index.d.ts",
   "scripts": {
     "build": "rollup -c",
-    "preversion": "npm run build",
+    "preversion": "npm run test && npm run build",
     "version": "npm publish --access public",
     "postversion": "git push --follow-tags",
     "test": "node test/mount.test.js"
