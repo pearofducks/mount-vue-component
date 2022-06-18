@@ -1,4 +1,4 @@
-import 'abdomen/setup'
+import './_setup.js'
 import { test } from 'uvu'
 import * as assert from 'uvu/assert'
 import { isVNode, h, createApp } from 'vue'
