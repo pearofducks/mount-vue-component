@@ -21,6 +21,16 @@ const comp = {
 const { vNode, destroy, el } = mount(comp, { props: { name: 'world' } })
 ```
 
+If the component is defined in a `.vue` file and only created programmatically,
+you may need to import and register it to avoid its template being removed from
+prod builds during tree shaking.  For example:
+
+```js
+import MyComponent from "./MyComponent.vue";
+const app = createApp(App).use(router);
+app.component("MyComponent", MyComponent);
+```
+
 ## api
 
 #### `mount(component, { props, children, element, app })`
