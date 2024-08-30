@@ -1,4 +1,6 @@
-import pkg from './package.json'
+import { readPackageJSON } from 'pkg-types'
+
+const pkg = await readPackageJSON()
 
 export default {
   input: 'index.js',

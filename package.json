@@ -30,9 +30,10 @@
   },
   "homepage": "https://github.com/pearofducks/mount-vue-component#readme",
   "devDependencies": {
-    "@happy-dom/global-registrator": "^5.3.1",
-    "happy-dom": "^5.3.1",
-    "rollup": "^2.75.6",
+    "@happy-dom/global-registrator": "^15.6.0",
+    "happy-dom": "^15.6.0",
+    "pkg-types": "^1.2.0",
+    "rollup": "^4.21.2",
     "uvu": "^0.5.1",
     "vue": "^3.2.37"
   }
